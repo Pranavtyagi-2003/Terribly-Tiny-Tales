@@ -120,11 +120,10 @@ Object.keys(wordFrequencies).forEach((key) => {
     const newData = { letter: key, frequency: value };
     barDataArray.push(newData);
   });
-
-
-  Example :- 
-
-   barDataArray = [
+```
+2. Example :-
+```bash
+ barDataArray = [
    {
      letter : "can",
      frequency : "10"
@@ -134,7 +133,8 @@ Object.keys(wordFrequencies).forEach((key) => {
      frequency : "5"
    },
    ]
-```
+```   
+
 # Export to cvs
 1. Call the function handleExportClick from export button.
 ```bash
