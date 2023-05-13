@@ -3,7 +3,7 @@
 
 This is a react app where you will get a histogram of words frequency and "export to csv" option after fetching text file.
 
-[Live website link](https://luxury-piroshki-8081d6.netlify.app/)
+[Live website link](https://gentle-hummingbird-5c06b9.netlify.app/)
 
 
 ## Installation
@@ -231,6 +231,101 @@ function reset() {
     freq.length = 0;
     setWordFrequencies({});
   }
+```
+# Apply the CSS
+1. Import the FileFetch.css in FileFetch.jsx.
+```bash
+import "./FetchFile.css";
+```
+2. CSS file code.
+```bash
+.main-div{
+    height: 100vh;
+}
+.graph{
+    height: 80vh;
+}
+.buttons{
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    height: 5vh;
+}
+
+.para{
+    text-align: center;
+}
+
+.submit{
+    width: 6%;
+    height: 4.5vh;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .2rem;
+    font-size: 15px;
+}
+.submit:hover{
+    background-color: rgb(37, 37, 147);
+}
+
+.export{
+    width: 8%;
+    height: 4.5vh;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .2rem;
+    font-size: 15px;
+}
+.export:hover{
+    background-color: rgb(8, 81, 8);
+}
+
+.reset{
+    width: 6%;
+    height: 4.5vh;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .2rem;
+    font-size: 15px;
+}
+.reset:hover{
+    background-color: rgb(162, 10, 10);
+}
+.graph{
+    margin-top: 4rem;
+    margin-left: 7rem;
+}
+
+@media (max-width:768px) {
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+    }
+    .submit{
+        width: 25%;
+    }
+    .reset{
+        width: 25%;
+    }
+    .export{
+        width: 25%;
+    }
+    .graph{
+        width: 150%;
+        margin-left: 0;
+        height: 200vh;
+        margin-top: 6rem;
+    }
+}
 ```
 
 # Thankyou happy hacking !!!!
