@@ -15,7 +15,7 @@ import {
 function FetchFile() {
   const [wordFrequencies, setWordFrequencies] = useState({});
 
-  const calculateLetterFrequencies = async (link) => {
+  const calculateWordFrequencies = async (link) => {
     const response = await axios.get(link);
     const text = response.data.toLowerCase();
     const words = text.split(/\s+/);
@@ -80,7 +80,7 @@ function FetchFile() {
           {freq.length === 0 && (
             <button
               onClick={() =>
-                calculateLetterFrequencies(
+                calculateWordFrequencies(
                   "https://www.terriblytinytales.com/test.txt"
                 )
               }
