@@ -5,6 +5,8 @@ This is a react app where you will get a histogram of words frequency and "expor
 
 [Live website link](https://gentle-hummingbird-5c06b9.netlify.app/)
 
+* This website is hosted on netlify.
+
 
 ## Installation
 
